@@ -1,7 +1,8 @@
 package wallet
 
 import (
-	"crypto/rand"
+	"math/rand"
+	"time"
 	"encoding/binary"
 	"bytes"
 	"jewel-wallet/dict"
@@ -23,7 +24,7 @@ func (m *Mnemonic) rand(bits uint32) (mnemonic Mnemonic) {
 	var i uint32
 	for i = 0; i < bits/64; i++ {
 		bytesBuffer := bytes.NewBuffer([]byte{})
-		binary.Write(bytesBuffer, binary.BigEndian, rand.Reader)
+		binary.Write(bytesBuffer, binary.BigEndian, rand.NewSource(time.Now().UnixNano()).Int63())
 		mnemonic = append(mnemonic, bytesBuffer.Bytes() ...)
 	}
 	return mnemonic
