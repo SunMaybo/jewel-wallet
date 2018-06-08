@@ -9,7 +9,7 @@ import (
 	"encoding/hex"
 	"fmt"
 	"github.com/btcsuite/btcutil/base58"
-	"jewel-wallet/keystore"
+	"github.com/SunMaybo/jewel-wallet/keystore"
 	"crypto/ecdsa"
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/satori/go.uuid"

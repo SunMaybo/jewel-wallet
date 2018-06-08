@@ -5,7 +5,7 @@ import (
 	"time"
 	"encoding/binary"
 	"bytes"
-	"jewel-wallet/dict"
+	"github.com/SunMaybo/jewel-wallet/dict"
 	"crypto/sha256"
 	"encoding/hex"
 )

@@ -4,9 +4,9 @@ import (
 	"testing"
 	"crypto/ecdsa"
 	"fmt"
-	"jewel-wallet/keystore"
+	"github.com/SunMaybo/jewel-wallet/keystore"
 	"github.com/ethereum/go-ethereum/crypto"
-	"jewel-wallet/dict"
+	"github.com/SunMaybo/jewel-wallet/dict"
 )
 
 func TestWallet(t *testing.T) {

@@ -9,11 +9,11 @@ import (
 	"crypto/aes"
 	"math/big"
 	"crypto/cipher"
-	"github.com/ethereum/go-ethereum/crypto"
 	"golang.org/x/crypto/scrypt"
 	"bytes"
 	"fmt"
 	"github.com/pkg/errors"
+	"github.com/ethereum/go-ethereum/crypto"
 )
 
 const (
