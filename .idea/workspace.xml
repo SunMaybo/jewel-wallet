@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="1aa5d984-0956-4756-9f19-73c07dd79207" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/wallet/keystore/UTC--2018-06-06T19:41:38.248258532Z--0x823377e5C639c2762cf55518b32387C6CA2Ae98f.json" afterPath="" />
-    </list>
+    <list default="true" id="1aa5d984-0956-4756-9f19-73c07dd79207" name="Default" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -38,13 +35,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="keystore_file.go" pinned="false" current-in-tab="false">
+      <file leaf-file-name="keystore_file.go" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/keystore/keystore_file.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1222">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="393">
+              <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
               <folding>
-                <element signature="e#18#142#0" expanded="true" />
+                <element signature="e#18#111#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,8 +70,8 @@
       <file leaf-file-name="keystore.go" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keystore/keystore.go">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2860">
-              <caret line="110" column="30" lean-forward="false" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
+            <state relative-caret-position="1404">
+              <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
               <folding>
                 <element signature="e#18#272#0" expanded="true" />
                 <element signature="n#!!block;n#getEntropyCSPRNG#0" expanded="false" />
@@ -120,11 +117,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="UTC--2018-06-02T23:52:57.565710762Z--7ef5a6135f1fd6a02593eedc869c6d41d934aef8.json" pinned="false" current-in-tab="true">
+      <file leaf-file-name="UTC--2018-06-02T23:52:57.565710762Z--7ef5a6135f1fd6a02593eedc869c6d41d934aef8.json" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/keystore/UTC--2018-06-02T23:52:57.565710762Z--7ef5a6135f1fd6a02593eedc869c6d41d934aef8.json">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+              <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -180,13 +177,13 @@
         <option value="$PROJECT_DIR$/wallet/hd_test.go" />
         <option value="$PROJECT_DIR$/wallet/util.go" />
         <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/keystore/keystore_file.go" />
         <option value="$PROJECT_DIR$/README.md" />
-        <option value="$PROJECT_DIR$/keystore/keystore.go" />
         <option value="$PROJECT_DIR$/wallet/key.go" />
         <option value="$PROJECT_DIR$/wallet/mnemonic.go" />
         <option value="$PROJECT_DIR$/wallet/wallet_test.go" />
         <option value="$PROJECT_DIR$/keystore/keystore_test.go" />
+        <option value="$PROJECT_DIR$/keystore/keystore.go" />
+        <option value="$PROJECT_DIR$/keystore/keystore_file.go" />
       </list>
     </option>
   </component>
@@ -371,15 +368,16 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-320" y="-1057" width="1920" height="1010" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22644539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22644539" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34679088" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13664596" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29642057" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.41614908" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -412,18 +410,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/keystore/keystore.go</url>
-          <line>98</line>
+          <line>99</line>
           <option name="timeStamp" value="47" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/wallet/wallet_test.go</url>
           <line>52</line>
           <option name="timeStamp" value="48" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="DlvLineBreakpoint">
-          <url>file://$PROJECT_DIR$/keystore/keystore_file.go</url>
-          <line>18</line>
-          <option name="timeStamp" value="50" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DlvLineBreakpoint">
           <url>file://$PROJECT_DIR$/wallet/wallet_test.go</url>
@@ -726,40 +719,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/keystore/keystore_test.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="260">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keystore/keystore_file.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1222">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#18#142#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/keystore/keystore.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2860">
-          <caret line="110" column="30" lean-forward="false" selection-start-line="110" selection-start-column="30" selection-end-line="110" selection-end-column="30" />
-          <folding>
-            <element signature="e#18#272#0" expanded="true" />
-            <element signature="n#!!block;n#getEntropyCSPRNG#0" expanded="false" />
-            <element signature="n#!!block;n#getKDFKey#0" expanded="false" />
-            <element signature="n#!!block;n#PaddedBigBytes#0" expanded="false" />
-            <element signature="n#!!block;n#aesCTRXOR#0" expanded="false" />
-            <element signature="n#!!block;n#ReadBits#0" expanded="false" />
-            <element signature="n#!!block;n#ensureInt#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../github.com/ethereum/go-ethereum/crypto/crypto.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4654">
@@ -798,8 +757,42 @@
     <entry file="file://$PROJECT_DIR$/keystore/UTC--2018-06-02T23:52:57.565710762Z--7ef5a6135f1fd6a02593eedc869c6d41d934aef8.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
-          <caret line="0" column="43" lean-forward="false" selection-start-line="0" selection-start-column="43" selection-end-line="0" selection-end-column="43" />
+          <caret line="0" column="32" lean-forward="false" selection-start-line="0" selection-start-column="32" selection-end-line="0" selection-end-column="32" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keystore/keystore.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1404">
+          <caret line="54" column="20" lean-forward="true" selection-start-line="54" selection-start-column="20" selection-end-line="54" selection-end-column="20" />
+          <folding>
+            <element signature="e#18#272#0" expanded="true" />
+            <element signature="n#!!block;n#getEntropyCSPRNG#0" expanded="false" />
+            <element signature="n#!!block;n#getKDFKey#0" expanded="false" />
+            <element signature="n#!!block;n#PaddedBigBytes#0" expanded="false" />
+            <element signature="n#!!block;n#aesCTRXOR#0" expanded="false" />
+            <element signature="n#!!block;n#ReadBits#0" expanded="false" />
+            <element signature="n#!!block;n#ensureInt#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keystore/keystore_test.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="260">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/keystore/keystore_file.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="393">
+          <caret line="79" column="0" lean-forward="true" selection-start-line="79" selection-start-column="0" selection-end-line="79" selection-end-column="0" />
+          <folding>
+            <element signature="e#18#111#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

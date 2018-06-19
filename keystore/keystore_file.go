@@ -13,7 +13,7 @@ type FileOperator struct {
 	Dir string
 }
 
-func (fo *FileOperator) Save(keystore KeyStore, account string, force bool) error {
+func (fo *FileOperator) Save(keystore KeyStore, account string) error {
 	fileName := fo.Dir + "/" + "UTC--" + time.Now().Format("2006-01-02T15:04:05.999999999Z") + "--" + account + ".json"
 	buff, err := json.Marshal(keystore)
 	if err != nil {

@@ -88,11 +88,11 @@ func (k *KeyStore) Import(fileName string, auth string) error {
 	if err != nil {
 		return err
 	}
-	keystore, err := k.EncryptKey(key, auth, LightScryptN, LightScryptP)
+	keystore, err := k.EncryptKey(key, auth, keyStore.Crypto.KdfParams.N, keyStore.Crypto.KdfParams.P)
 	if err != nil {
 		return err
 	}
-	fo.Save(keystore, k.AddressFunc(key.PrivateKey), true)
+	fo.Save(keystore, k.AddressFunc(key.PrivateKey))
 	return nil
 }
 
@@ -109,8 +109,8 @@ func (k *KeyStore) PrivateKey(account, auth string) (*Key, error) {
 	keyStore := fo.ReadKeyStore(account)
 	return k.DecryptKey(keyStore, auth)
 }
-func (k *KeyStore) NewAccount(key *Key, auth string, force bool) (string, error) {
-	ks, err := k.EncryptKey(key, auth, LightScryptN, LightScryptP)
+func (k *KeyStore) NewAccount(key *Key, auth string, scryptN, scryptP int) (string, error) {
+	ks, err := k.EncryptKey(key, auth, scryptN, scryptP)
 	if err != nil {
 		return "", err
 	}
@@ -118,7 +118,7 @@ func (k *KeyStore) NewAccount(key *Key, auth string, force bool) (string, error)
 		Dir: k.Dir,
 	}
 	address := k.AddressFunc(key.PrivateKey)
-	err = fo.Save(ks, address, force)
+	err = fo.Save(ks, address)
 	if err != nil {
 		return "", err
 	}
