@@ -48,6 +48,7 @@ type KeyStore struct {
 	Crypto      Crypto                                              `json:"crypto"`
 	ID          string                                              `json:"id"`
 	Version     int                                                 `json:"version"`
+	Address     string                                              `json:"address"`
 	AddressFunc func(privateKey *ecdsa.PrivateKey) (address string) `json:"-"`
 	Dir         string                                              `json:"-"`
 }

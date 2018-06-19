@@ -7,8 +7,6 @@ import (
 	"time"
 	"encoding/json"
 	"github.com/cihub/seelog"
-	"os"
-	"github.com/pkg/errors"
 )
 
 type FileOperator struct {
@@ -16,14 +14,6 @@ type FileOperator struct {
 }
 
 func (fo *FileOperator) Save(keystore KeyStore, account string, force bool) error {
-	name := fo.existFile(account)
-	if name != "" && !force {
-		return errors.New("account keystore exist")
-	}
-	if name != "" {
-		os.Remove(fo.Dir + "/" + name)
-	}
-
 	fileName := fo.Dir + "/" + "UTC--" + time.Now().Format("2006-01-02T15:04:05.999999999Z") + "--" + account + ".json"
 	buff, err := json.Marshal(keystore)
 	if err != nil {
@@ -42,8 +32,9 @@ func (fo *FileOperator) ReadAccounts() (accounts []string) {
 		if file.IsDir() {
 			continue
 		}
-		if len(strings.Split(file.Name(), "--")) == 3 {
-			accounts = append(accounts, strings.Split(strings.Split(file.Name(), "--")[2], ".")[0])
+		keystore := fo.ReadKeyStoreFromFile(fo.Dir + "/" + file.Name())
+		if keystore.Address != "" {
+			accounts = append(accounts, keystore.Address)
 		}
 
 	}
@@ -55,14 +46,12 @@ func (fo *FileOperator) ReadKeyStore(account string) KeyStore {
 		log.Fatal(e)
 	}
 	for _, file := range dirList {
-		if strings.Contains(file.Name(), account) {
-			buff, err := ioutil.ReadFile(file.Name())
-			if err != nil {
-				log.Fatal(e)
-			}
-			ks := KeyStore{}
-			json.Unmarshal(buff, &ks)
-			return ks
+		if file.IsDir() {
+			continue
+		}
+		keystore := fo.ReadKeyStoreFromFile(fo.Dir + "/" + file.Name())
+		if keystore.Address == account {
+			return keystore
 		}
 	}
 	return KeyStore{}
